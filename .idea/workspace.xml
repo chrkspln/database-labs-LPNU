@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="05bcaa0c-6c78-43bc-ba4c-9887188c3652" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/DB_lab4_flask_backend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/app.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/controller/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/controller/delivery_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/controller/delivery_cost_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/controller/general_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/controller/price_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/controller/product_category_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/controller/product_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/controller/product_details_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/controller/product_expiration_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/controller/store_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/controller/store_supply_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/controller/supplier_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/controller/urgency_type_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/dao/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/dao/delivery_cost_dao.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/dao/delivery_dao.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/dao/general_dao.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/dao/price_dao.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/dao/product_category_dao.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/dao/product_dao.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/dao/product_details_dao.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/dao/product_expiration_dao.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/dao/store_dao.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/dao/store_supply_dao.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/dao/supplier_dao.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/dao/urgency_type_dao.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/model/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/model/delivery_cost_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/model/delivery_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/model/price_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/model/product_category_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/model/product_details_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/model/product_expiration_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/model/product_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/model/store_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/model/store_supply_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/model/supplier_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/model/urgency_type_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/route/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/route/delivery_cost_route.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/route/delivery_route.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/route/error_handler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/route/price_route.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/route/product_category_route.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/route/product_details_route.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/route/product_expiration_route.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/route/product_route.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/route/store_route.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/route/store_supply_route.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/route/supplier_route.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/route/urgency_type_route.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/service/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/service/delivery_cost_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/service/delivery_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/service/general_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/service/price_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/service/product_category_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/service/product_details_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/service/product_expiration_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/service/product_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/service/store_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/service/store_supply_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/service/supplier_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/auth/service/urgency_type_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/data.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+        <option value="Python Script" />
+        <option value="SQL File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2njy6A8hSo7aBUKV2sXpkpDHdlb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Flask server.DB_lab4_flask_backend.executor&quot;: &quot;Run&quot;,
+    &quot;Flask server.Flask (app.py).executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/dev/projects/DB_lab4_flask_backend/sql&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\projects\DB_lab4_flask_backend\sql" />
+      <recent name="C:\dev\projects\DB_lab4_flask_backend\services" />
+      <recent name="C:\dev\projects\DB_lab4_flask_backend\models" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\projects\DB_lab4_flask_backend\lab4" />
+      <recent name="C:\dev\projects\DB_lab4_flask_backend\lab4\auth" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Flask server.Flask (app.py)">
+    <configuration name="DB_lab4_flask_backend" type="Python.FlaskServer">
+      <module name="DB_lab4_flask_backend" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Flask (app.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+      <module name="DB_lab4_flask_backend" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flask server.Flask (app.py)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-PY-242.21829.153" />
+        <option value="bundled-python-sdk-464836ebc622-b74155a9e76b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.21829.153" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="05bcaa0c-6c78-43bc-ba4c-9887188c3652" name="Changes" comment="" />
+      <created>1729500603076</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729500603076</updated>
+      <workItem from="1729500621607" duration="8042000" />
+      <workItem from="1729607891592" duration="18000" />
+      <workItem from="1730153189944" duration="4448000" />
+      <workItem from="1730157740946" duration="2951000" />
+      <workItem from="1730161355406" duration="648000" />
+      <workItem from="1730190641247" duration="6978000" />
+      <workItem from="1730217892366" duration="798000" />
+      <workItem from="1730279634601" duration="10765000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DB_lab4_flask_backend$DB_lab4_flask_backend.coverage" NAME="DB_lab4_flask_backend Coverage Results" MODIFIED="1730280033674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DB_lab4_flask_backend$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1730357680963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>
