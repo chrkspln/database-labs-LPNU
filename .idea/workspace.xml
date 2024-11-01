@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05bcaa0c-6c78-43bc-ba4c-9887188c3652" name="Changes" comment="added lab4 (flask backend)">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="05bcaa0c-6c78-43bc-ba4c-9887188c3652" name="Changes" comment="setup">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +142,7 @@
       <workItem from="1730190641247" duration="6978000" />
       <workItem from="1730217892366" duration="798000" />
       <workItem from="1730279634601" duration="10765000" />
-      <workItem from="1730455041606" duration="1119000" />
+      <workItem from="1730455041606" duration="1151000" />
     </task>
     <task id="LOCAL-00001" summary="added lab4 (flask backend)">
       <option name="closed" value="true" />
@@ -153,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730455298697</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="setup">
+      <option name="closed" value="true" />
+      <created>1730456185937</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730456185937</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +179,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added lab4 (flask backend)" />
-    <option name="LAST_COMMIT_MESSAGE" value="added lab4 (flask backend)" />
+    <MESSAGE value="setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="setup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
