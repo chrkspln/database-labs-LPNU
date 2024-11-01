@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05bcaa0c-6c78-43bc-ba4c-9887188c3652" name="Changes" comment="added lab4 (flask backend)">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +25,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "chrkspln"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/chrkspln/database-labs-LPNU",
@@ -136,7 +143,7 @@
       <workItem from="1730190641247" duration="6978000" />
       <workItem from="1730217892366" duration="798000" />
       <workItem from="1730279634601" duration="10765000" />
-      <workItem from="1730455041606" duration="811000" />
+      <workItem from="1730455041606" duration="1119000" />
     </task>
     <task id="LOCAL-00001" summary="added lab4 (flask backend)">
       <option name="closed" value="true" />
