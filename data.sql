@@ -26,28 +26,11 @@ INSERT INTO stores (store_name, store_address) VALUES
 ('Auchan Mall', '101 Mall Ave'),
 ('Auchan City Center', '909 City Center Blvd');
 
-INSERT INTO urgency_types (urgency_type_id, urgency_description) VALUES
-(1, 'Same Day'),
-(2, 'Next Day'),
-(3, 'Standard Delivery (3-5 Days)'),
-(4, 'Express');
-
-INSERT INTO deliveries (product_id, store_id, delivery_date, quantity, urgency_type_id) VALUES
-(1, 1, '2024-11-27', 50, 1),   -- Coca-Cola, Auchan Central, Same Day
-(2, 2, '2024-11-28', 40, 2),   -- Pepsi, Auchan North, Next Day
-(3, 3, '2024-11-29', 30, 3),   -- Milk, Auchan Mall, Standard Delivery
-(4, 4, '2024-11-30', 20, 4),   -- Cheese, Auchan City Center, Express
-(5, 1, '2024-12-01', 100, 3),  -- Donuts, Auchan Central, Standard Delivery
-(6, 2, '2024-12-02', 80, 1),   -- Bread, Auchan North, Same Day
-(7, 3, '2024-12-03', 60, 2),   -- Pizza, Auchan Mall, Next Day
-(8, 4, '2024-12-04', 70, 4),   -- Varenyky, Auchan City Center, Express
-(9, 1, '2024-12-05', 50, 3),   -- Chicken, Auchan Central, Standard Delivery
-(10, 2, '2024-12-06', 40, 1),  -- Pork, Auchan North, Same Day
-(11, 3, '2024-12-07', 90, 2),  -- Apples, Auchan Mall, Next Day
-(12, 4, '2024-12-08', 100, 4), -- Bananas, Auchan City Center, Express
-(13, 1, '2024-12-09', 50, 3),  -- Coca-Cola, Auchan Central, Standard Delivery
-(14, 2, '2024-12-10', 40, 1),  -- Pepsi, Auchan North, Same Day
-(15, 3, '2024-12-11', 30, 2);  -- Milk, Auchan Mall, Next Day
+INSERT INTO urgency_types (urgency_description) VALUES
+('Same Day'),
+('Next Day'),
+('Standard Delivery (3-5 Days)'),
+('Express');
 
 INSERT INTO delivery_costs (urgency_type_id, delivery_cost) VALUES
 (1, 200),
@@ -115,3 +98,20 @@ INSERT INTO store_supplies (product_id, store_id, supplier_id) VALUES
 (10, 2, 1), -- Pork, Auchan North, Supplier A
 (11, 3, 2), -- Apples, Auchan Mall, Supplier B
 (12, 4, 3); -- Bananas, Auchan City Center, Supplier C
+
+INSERT INTO deliveries (delivery_id, store_id, urgency_type_id, delivery_date, quantity) VALUES
+(1, 1, 4, '2024-11-27', 50),   -- Coca-Cola, Auchan Central, Same Day
+(2, 2, 2, '2024-11-28', 40),   -- Pepsi, Auchan North, Next Day
+(3, 3, 3, '2024-11-29', 30),   -- Milk, Auchan Mall, Standard Delivery
+(4, 4, 4, '2024-11-30', 20),   -- Cheese, Auchan City Center, Express
+(5, 1, 3, '2024-12-01', 100),  -- Donuts, Auchan Central, Standard Delivery
+(6, 2, 1, '2024-12-02', 80),   -- Bread, Auchan North, Same Day
+(7, 3, 2, '2024-12-03', 60),   -- Pizza, Auchan Mall, Next Day
+(8, 4, 4, '2024-12-04', 70),   -- Varenyky, Auchan City Center, Express
+(9, 1, 3, '2024-12-05', 50),   -- Chicken, Auchan Central, Standard Delivery
+( 10, 2, 1, '2024-12-06', 40),  -- Pork, Auchan North, Same Day
+( 11, 3, 2, '2024-12-07', 90),  -- Apples, Auchan Mall, Next Day
+( 12, 4, 4, '2024-12-08', 100), -- Bananas, Auchan City Center, Express
+(13, 1, 3, '2024-12-09', 50),  -- Coca-Cola, Auchan Central, Standard Delivery
+( 14, 2, 1, '2024-12-10', 40),  -- Pepsi, Auchan North, Same Day
+( 15, 3, 2, '2024-12-11', 30);  -- Milk, Auchan Mall, Next Day

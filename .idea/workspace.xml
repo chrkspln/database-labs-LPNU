@@ -4,8 +4,78 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05bcaa0c-6c78-43bc-ba4c-9887188c3652" name="Changes" comment="setup">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="05bcaa0c-6c78-43bc-ba4c-9887188c3652" name="Changes" comment="added repeatable data in tables">
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/controller/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/controller/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/controller/delivery_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/controller/delivery_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/controller/delivery_cost_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/controller/delivery_cost_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/controller/general_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/controller/general_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/controller/price_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/controller/price_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/controller/product_category_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/controller/product_category_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/controller/product_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/controller/product_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/controller/product_details_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/controller/product_details_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/controller/product_expiration_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/controller/product_expiration_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/controller/store_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/controller/store_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/controller/store_supply_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/controller/store_supply_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/controller/supplier_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/controller/supplier_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/controller/urgency_type_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/controller/urgency_type_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/dao/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/dao/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/dao/delivery_cost_dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/dao/delivery_cost_dao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/dao/delivery_dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/dao/delivery_dao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/dao/general_dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/dao/general_dao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/dao/price_dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/dao/price_dao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/dao/product_category_dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/dao/product_category_dao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/dao/product_dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/dao/product_dao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/dao/product_details_dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/dao/product_details_dao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/dao/product_expiration_dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/dao/product_expiration_dao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/dao/store_dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/dao/store_dao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/dao/store_supply_dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/dao/store_supply_dao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/dao/supplier_dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/dao/supplier_dao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/dao/urgency_type_dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/dao/urgency_type_dao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/model/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/model/delivery_cost_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/delivery_cost_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/model/delivery_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/delivery_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/model/price_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/price_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/model/product_category_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/product_category_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/model/product_details_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/product_details_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/model/product_expiration_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/product_expiration_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/model/product_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/product_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/model/store_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/store_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/model/store_supply_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/store_supply_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/model/supplier_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/supplier_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/model/urgency_type_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/urgency_type_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/route/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/route/delivery_cost_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/delivery_cost_route.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/route/delivery_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/delivery_route.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/route/error_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/error_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/route/price_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/price_route.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/route/product_category_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/product_category_route.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/route/product_details_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/product_details_route.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/route/product_expiration_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/product_expiration_route.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/route/product_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/product_route.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/route/store_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/store_route.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/route/store_supply_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/store_supply_route.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/route/supplier_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/supplier_route.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/route/urgency_type_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/urgency_type_route.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/service/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/service/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/service/delivery_cost_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/service/delivery_cost_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/service/delivery_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/service/delivery_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/service/general_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/service/general_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/service/price_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/service/price_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/service/product_category_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/service/product_category_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/service/product_details_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/service/product_details_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/service/product_expiration_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/service/product_expiration_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/service/product_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/service/product_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/service/store_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/service/store_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/service/store_supply_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/service/store_supply_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/service/supplier_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/service/supplier_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/auth/service/urgency_type_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/service/urgency_type_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,18 +94,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "chrkspln"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;chrkspln&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/chrkspln/database-labs-LPNU",
-    "accountId": "fbb351b1-5f74-4d0a-a7cf-11d83384434c"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/chrkspln/database-labs-LPNU&quot;,
+    &quot;accountId&quot;: &quot;fbb351b1-5f74-4d0a-a7cf-11d83384434c&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -75,6 +145,7 @@
       <recent name="C:\dev\projects\DB_lab4_flask_backend\models" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\projects\DB_lab4_flask_backend" />
       <recent name="C:\dev\projects\DB_lab4_flask_backend\lab4" />
       <recent name="C:\dev\projects\DB_lab4_flask_backend\lab4\auth" />
     </key>
@@ -104,7 +175,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -160,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730456185937</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added repeatable data in tables">
+      <option name="closed" value="true" />
+      <created>1732820283672</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732820283672</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,13 +259,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added lab4 (flask backend)" />
     <MESSAGE value="setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup" />
+    <MESSAGE value="added repeatable data in tables" />
+    <option name="LAST_COMMIT_MESSAGE" value="added repeatable data in tables" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/lab4/auth/model/urgency_type_model.py</url>
+          <url>file://$PROJECT_DIR$/app/auth/model/urgency_type_model.py</url>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -194,6 +274,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DB_lab4_flask_backend$DB_lab4_flask_backend.coverage" NAME="DB_lab4_flask_backend Coverage Results" MODIFIED="1730280033674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DB_lab4_flask_backend$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1730357680963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/DB_lab4_flask_backend$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1732826496076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

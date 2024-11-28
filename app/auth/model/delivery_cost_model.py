@@ -1,6 +1,6 @@
 from __future__ import annotations
 from typing import Dict, Any
-from lab4 import db
+from app import db
 
 
 class DeliveryCost(db.Model):
