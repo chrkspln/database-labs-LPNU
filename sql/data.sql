@@ -1,174 +1,117 @@
 INSERT INTO product_categories (category_name) VALUES
 ('Beverages'),
-('Snacks'),
 ('Dairy'),
 ('Bakery'),
 ('Frozen Foods'),
-('Produce'),
 ('Meat'),
-('Seafood'),
-('Canned Goods'),
-('Condiments'),
-('Household Supplies'),
-('Personal Care'),
-('Pharmacy'),
-('Baby Products'),
-('Pet Supplies');
+('Fruits');
 
 INSERT INTO products (product_name, category_id) VALUES
 ('Coca-Cola', 1),
 ('Pepsi', 1),
-('Doritos', 2),
-('Lays', 2),
-('Milk', 3),
-('Cheese', 3),
-('Bread', 4),
-('Donuts', 4),
-('Frozen Pizza', 5),
-('Frozen Vegetables', 5),
+('Milk', 2),
+('Cheese', 2),
+('Donuts', 3),
+('Bread', 3),
+('Pizza', 4),
+('Varenyky', 4),
+('Chicken', 5),
+('Pork', 5),
 ('Apples', 6),
-('Bananas', 6),
-('Chicken Breast', 7),
-('Salmon Fillet', 8),
-('Tuna Can', 9);
+('Bananas', 6);
 
 INSERT INTO stores (store_name, store_address) VALUES
 ('Auchan Central', '123 Main St'),
-('Auchan West', '456 West Ave'),
-('Auchan East', '789 East Blvd'),
 ('Auchan North', '135 North St'),
-('Auchan South', '246 South Blvd'),
-('Auchan Downtown', '789 City Square'),
 ('Auchan Mall', '101 Mall Ave'),
-('Auchan Suburbs', '202 Suburbs Ln'),
-('Auchan Riverside', '303 Riverside Dr'),
-('Auchan Airport', '404 Airport Rd'),
-('Auchan Metro', '505 Metro Center'),
-('Auchan Beachside', '606 Beachside St'),
-('Auchan Mountain View', '707 Mountain View Dr'),
-('Auchan Parkside', '808 Parkside Ave'),
 ('Auchan City Center', '909 City Center Blvd');
 
 INSERT INTO urgency_types (urgency_type_id, urgency_description) VALUES
 (1, 'Same Day'),
 (2, 'Next Day'),
-(3, '2-Day Delivery'),
-(4, 'Standard Delivery (3-5 Days)'),
-(5, 'Economy Delivery (5-7 Days)'),
-(6, 'Express'),
-(7, 'Scheduled'),
-(8, 'Overnight'),
-(9, 'Weekend'),
-(10, 'Holiday'),
-(11, 'Morning Delivery'),
-(12, 'Afternoon Delivery'),
-(13, 'Evening Delivery'),
-(14, 'Flexible Delivery'),
-(15, 'No Rush');
+(3, 'Standard Delivery (3-5 Days)'),
+(4, 'Express');
 
 INSERT INTO deliveries (product_id, store_id, delivery_date, quantity, urgency_type_id) VALUES
-(1, 1, '2024-10-01', 1, 1),
-(2, 2, '2024-10-02', 2, 2),
-(3, 3, '2024-10-03', 3, 3),
-(4, 4, '2024-10-04', 4, 4),
-(5, 1, '2024-10-05', 5, 5),
-(6, 2, '2024-10-06', 6, 6),
-(1, 2, '2024-10-07', 7, 7),
-(1, 1, '2024-10-08', 8, 8),
-(2, 4, '2024-10-09', 9, 9),
-(2, 4, '2024-10-10', 10, 10),
-(2, 2, '2024-10-11', 11, 11),
-(3, 4, '2024-10-12', 12, 12),
-(5, 5, '2024-10-13', 13, 13),
-(5, 5, '2024-10-14', 14, 14),
-(4, 5, '2024-10-15', 15, 15);
+(1, 1, '2024-11-27', 50, 1),   -- Coca-Cola, Auchan Central, Same Day
+(2, 2, '2024-11-28', 40, 2),   -- Pepsi, Auchan North, Next Day
+(3, 3, '2024-11-29', 30, 3),   -- Milk, Auchan Mall, Standard Delivery
+(4, 4, '2024-11-30', 20, 4),   -- Cheese, Auchan City Center, Express
+(5, 1, '2024-12-01', 100, 3),  -- Donuts, Auchan Central, Standard Delivery
+(6, 2, '2024-12-02', 80, 1),   -- Bread, Auchan North, Same Day
+(7, 3, '2024-12-03', 60, 2),   -- Pizza, Auchan Mall, Next Day
+(8, 4, '2024-12-04', 70, 4),   -- Varenyky, Auchan City Center, Express
+(9, 1, '2024-12-05', 50, 3),   -- Chicken, Auchan Central, Standard Delivery
+(10, 2, '2024-12-06', 40, 1),  -- Pork, Auchan North, Same Day
+(11, 3, '2024-12-07', 90, 2),  -- Apples, Auchan Mall, Next Day
+(12, 4, '2024-12-08', 100, 4), -- Bananas, Auchan City Center, Express
+(13, 1, '2024-12-09', 50, 3),  -- Coca-Cola, Auchan Central, Standard Delivery
+(14, 2, '2024-12-10', 40, 1),  -- Pepsi, Auchan North, Same Day
+(15, 3, '2024-12-11', 30, 2);  -- Milk, Auchan Mall, Next Day
 
 INSERT INTO delivery_costs (urgency_type_id, delivery_cost) VALUES
-(1, 9.99),
-(2, 7.99),
-(3, 5.99),
-(4, 3.99),
-(5, 1.99),
-(6, 12.99),
-(7, 8.99),
-(8, 15.99),
-(9, 4.99),
-(10, 6.99),
-(11, 8.49),
-(12, 8.49),
-(13, 8.49),
-(14, 4.49),
-(15, 2.99);
+(1, 200),
+(2, 170),
+(3, 100),
+(4, 140);
 
 INSERT INTO prices (product_id, store_id, price) VALUES
-(1, 1, 1.49),
-(2, 2, 1.39),
-(3, 3, 2.99),
-(4, 4, 2.79),
-(5, 5, 0.99),
-(6, 6, 3.49),
-(7, 7, 1.99),
-(8, 8, 1.79),
-(9, 9, 5.49),
-(10, 10, 4.99),
-(11, 11, 0.59),
-(12, 12, 0.49),
-(13, 13, 5.99),
-(14, 14, 7.99),
-(15, 15, 2.59);
+(1, 1, 25.99),  -- Coca-Cola, Auchan Central
+(2, 2, 24.50),  -- Pepsi, Auchan North
+(3, 3, 35.00),  -- Milk, Auchan Mall
+(4, 4, 42.00),  -- Cheese, Auchan City Center
+(5, 1, 12.99),  -- Donuts, Auchan Central
+(6, 2, 9.99),   -- Bread, Auchan North
+(7, 3, 17.99),  -- Pizza, Auchan Mall
+(8, 4, 18.50),  -- Varenyky, Auchan City Center
+(9, 1, 23.50),  -- Chicken, Auchan Central
+(10, 2, 22.00), -- Pork, Auchan North
+(11, 3, 14.00), -- Apples, Auchan Mall
+(12, 4, 16.00); -- Bananas, Auchan City Center
 
 INSERT INTO product_details (product_id, description, category_id) VALUES
-(1, 'Refreshing cola drink', 1),
-(2, 'Popular soft drink', 1),
-(3, 'Crispy tortilla chips', 2),
-(4, 'Potato chips with flavors', 2),
-(5, 'Greek yoghurt', 3),
-(6, 'Cheddar cheese', 3),
-(7, 'Soft baked bread', 4),
-(8, 'Sweet glazed donut', 4),
-(9, 'Frozen pizza with cheese', 5),
-(10, 'Mixed frozen vegetables', 5),
-(11, 'Fresh apples', 6),
-(12, 'Ripe bananas', 6),
-(13, 'Boneless chicken breast', 7),
-(14, 'Fresh salmon fillet', 8),
-(15, 'Tuna in a can', 9);
+(1, 'Refreshing carbonated beverage', 1),     -- Coca-Cola, Beverages
+(2, 'Popular carbonated soda drink', 1),      -- Pepsi, Beverages
+(3, 'Fresh milk, sourced locally', 2),        -- Milk, Dairy
+(4, 'Aged cheese, mild flavor', 2),           -- Cheese, Dairy
+(5, 'Sweet and fluffy fried dough', 3),       -- Donuts, Bakery
+(6, 'Soft and fresh bread', 3),               -- Bread, Bakery
+(7, 'Classic Italian pizza, various toppings', 4),  -- Pizza, Frozen Foods
+(8, 'Traditional Ukrainian dumplings', 4),    -- Varenyky, Frozen Foods
+(9, 'Fresh, tender chicken cuts', 5),         -- Chicken, Meat
+(10, 'Juicy pork cuts for grilling', 5),      -- Pork, Meat
+(11, 'Fresh, crisp apples', 6),               -- Apples, Fruits
+(12, 'Sweet, ripe bananas', 6);               -- Bananas, Fruits
 
 INSERT INTO product_expiration (product_id, expiration_date) VALUES
-(1, '2025-01-01'),
-(2, '2025-01-02'),
-(3, '2025-01-03'),
-(4, '2025-01-04'),
-(5, '2025-01-05'),
-(6, '2025-01-06'),
-(7, '2025-01-07'),
-(8, '2025-01-08'),
-(9, '2025-01-09'),
-(10, '2025-01-10'),
-(11, '2025-01-11'),
-(12, '2025-01-12'),
-(13, '2025-01-13'),
-(14, '2025-01-14'),
-(15, '2025-01-15');
+(1, '2025-05-01'),  -- Coca-Cola
+(2, '2025-04-15'),  -- Pepsi
+(3, '2025-02-20'),  -- Milk
+(4, '2025-03-01'),  -- Cheese
+(5, '2024-12-25'),  -- Donuts
+(6, '2024-12-30'),  -- Bread
+(7, '2025-01-15'),  -- Pizza
+(8, '2025-02-01'),  -- Varenyky
+(9, '2025-06-01'),  -- Chicken
+(10, '2025-05-01'), -- Pork
+(11, '2025-01-10'), -- Apples
+(12, '2025-01-20'); -- Bananas
 
 INSERT INTO suppliers (supplier_name) VALUES
-('Supplier A'), ('Supplier B'), ('Supplier C'), ('Supplier D'), ('Supplier E'),
-('Supplier F'), ('Supplier G'), ('Supplier H'), ('Supplier I'), ('Supplier J'),
-('Supplier K'), ('Supplier L'), ('Supplier M'), ('Supplier N'), ('Supplier O');
+('Supplier A'),
+('Supplier B'),
+('Supplier C');
 
-#   INSERT INTO store_supplies (product_id, store_id, supplier_id, supply_date) VALUES
-#   (1, 1, 1, '2024-01-10'),
-#   (2, 2, 2, '2024-01-11'),
-#   (3, 3, 3, '2024-01-12'),
-#   (4, 4, 4, '2024-01-13'),
-#   (5, 5, 5, '2024-01-14'),
-#   (6, 6, 6, '2024-01-15'),
-#   (7, 7, 7, '2024-01-16'),
-#   (8, 8, 8, '2024-01-17'),
-#   (9, 9, 9, '2024-01-18'),
-#   (10, 10, 10, '2024-01-19'),
-#   (11, 11, 11, '2024-01-20'),
-#   (12, 12, 12, '2024-01-21'),
-#   (13, 13, 13, '2024-01-22'),
-#   (14, 14, 14, '2024-01-23'),
-#   (15, 15, 15, '2024-01-24');
+INSERT INTO store_supplies (product_id, store_id, supplier_id) VALUES
+(1, 1, 1),  -- Coca-Cola, Auchan Central, Supplier A
+(2, 2, 2),  -- Pepsi, Auchan North, Supplier B
+(3, 3, 3),  -- Milk, Auchan Mall, Supplier C
+(4, 4, 1),  -- Cheese, Auchan City Center, Supplier A
+(5, 1, 2),  -- Donuts, Auchan Central, Supplier B
+(6, 2, 3),  -- Bread, Auchan North, Supplier C
+(7, 3, 1),  -- Pizza, Auchan Mall, Supplier A
+(8, 4, 2),  -- Varenyky, Auchan City Center, Supplier B
+(9, 1, 3),  -- Chicken, Auchan Central, Supplier C
+(10, 2, 1), -- Pork, Auchan North, Supplier A
+(11, 3, 2), -- Apples, Auchan Mall, Supplier B
+(12, 4, 3); -- Bananas, Auchan City Center, Supplier C
