@@ -1,5 +1,5 @@
 from http import HTTPStatus
-from flask import Blueprint, Response, make_response
+from flask import Blueprint, Response, make_response, jsonify
 
 err_handler_bp = Blueprint('errors', __name__)
 

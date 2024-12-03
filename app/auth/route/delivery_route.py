@@ -43,8 +43,11 @@ def patch_delivery(delivery_id: int) -> Response:
 
 @delivery_bp.route('/<int:delivery_id>', methods=['DELETE'])
 def delete_delivery(delivery_id: int) -> Response:
-    delivery_controller.delete(delivery_id)
-    return make_response("Delivery deleted", HTTPStatus.OK)
+    try:
+        delivery_controller.delete(delivery_id)
+        return make_response("Delivery deleted", HTTPStatus.OK)
+    except Exception as e:
+        return make_response(jsonify({"error": f"An error occurred: {str(e)}"}), HTTPStatus.INTERNAL_SERVER_ERROR)
 
 @delivery_bp.route('/parametrized', methods=['POST'])
 def insert_delivery_record() -> Response:

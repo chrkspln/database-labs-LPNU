@@ -1033,7 +1033,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="291" parent="1" name="lab4_auchan">
-      <LastIntrospectionLocalTimestamp>2024-12-02.23:59:40</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-12-03.11:20:50</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="292" parent="1" name="labor_sql">

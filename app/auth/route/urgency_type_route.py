@@ -14,10 +14,13 @@ def get_all_urgency_types() -> Response:
 
 @urgency_type_bp.route('', methods=['POST'])
 def create_urgency_type() -> Response:
-    content = request.get_json()
-    urgency_type = UrgencyType.create_from_dto(content)
-    urgency_type_controller.create(urgency_type)
-    return make_response(jsonify(urgency_type.put_into_dto()), HTTPStatus.CREATED)
+    try:
+        content = request.get_json()
+        urgency_type = UrgencyType.create_from_dto(content)
+        urgency_type_controller.create(urgency_type)
+        return make_response(jsonify(urgency_type.put_into_dto()), HTTPStatus.CREATED)
+    except Exception as e:
+        return make_response(jsonify({"error": f"An error occurred: {str(e)}"}), HTTPStatus.INTERNAL_SERVER_ERROR)
 
 
 @urgency_type_bp.route('/<int:urgency_type_id>', methods=['GET'])
@@ -27,23 +30,32 @@ def get_urgency_type(urgency_type_id: int) -> Response:
 
 @urgency_type_bp.route('/<int:urgency_type_id>', methods=['PUT'])
 def update_urgency_type(urgency_type_id: int) -> Response:
-    content = request.get_json()
-    urgency_type = UrgencyType.create_from_dto(content)
-    urgency_type_controller.update(urgency_type_id, urgency_type)
-    return make_response("Urgency Type updated", HTTPStatus.OK)
+    try:
+        content = request.get_json()
+        urgency_type = UrgencyType.create_from_dto(content)
+        urgency_type_controller.update(urgency_type_id, urgency_type)
+        return make_response("Urgency Type updated", HTTPStatus.OK)
+    except Exception as e:
+        return make_response(jsonify({"error": f"An error occurred: {str(e)}"}), HTTPStatus.INTERNAL_SERVER_ERROR)
 
 
 @urgency_type_bp.route('/<int:urgency_type_id>', methods=['PATCH'])
 def patch_urgency_type(urgency_type_id: int) -> Response:
-    content = request.get_json()
-    urgency_type_controller.patch(urgency_type_id, content)
-    return make_response("Urgency Type updated", HTTPStatus.OK)
+    try:
+        content = request.get_json()
+        urgency_type_controller.patch(urgency_type_id, content)
+        return make_response("Urgency Type updated", HTTPStatus.OK)
+    except Exception as e:
+        return make_response(jsonify({"error": f"An error occurred: {str(e)}"}), HTTPStatus.INTERNAL_SERVER_ERROR)
 
 
 @urgency_type_bp.route('/<int:urgency_type_id>', methods=['DELETE'])
 def delete_urgency_type(urgency_type_id: int) -> Response:
-    urgency_type_controller.delete(urgency_type_id)
-    return make_response("Urgency Type deleted", HTTPStatus.OK)
+    try:
+        urgency_type_controller.delete(urgency_type_id)
+        return make_response("Urgency Type deleted", HTTPStatus.OK)
+    except Exception as e:
+        return make_response(jsonify({"error": f"An error occurred: {str(e)}"}), HTTPStatus.INTERNAL_SERVER_ERROR)
 
 @urgency_type_bp.route('/parametrized', methods=['POST'])
 def insert_urgency_type_record() -> Response:

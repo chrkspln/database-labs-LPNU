@@ -27,23 +27,32 @@ def get_product(product_id: int) -> Response:
 
 @product_bp.route('/<int:product_id>', methods=['PUT'])
 def update_product(product_id: int) -> Response:
-    content = request.get_json()
-    product = Product.create_from_dto(content)
-    product_controller.update(product_id, product)
-    return make_response("Product updated", HTTPStatus.OK)
+    try:
+        content = request.get_json()
+        product = Product.create_from_dto(content)
+        product_controller.update(product_id, product)
+        return make_response("Product updated", HTTPStatus.OK)
+    except Exception as e:
+        return make_response(jsonify({"error": f"An error occurred: {str(e)}"}), HTTPStatus.INTERNAL_SERVER_ERROR)
 
 
 @product_bp.route('/<int:product_id>', methods=['PATCH'])
 def patch_product(product_id: int) -> Response:
-    content = request.get_json()
-    product_controller.patch(product_id, content)
-    return make_response("Product updated", HTTPStatus.OK)
+    try:
+        content = request.get_json()
+        product_controller.patch(product_id, content)
+        return make_response("Product updated", HTTPStatus.OK)
+    except Exception as e:
+        return make_response(jsonify({"error": f"An error occurred: {str(e)}"}), HTTPStatus.INTERNAL_SERVER_ERROR)
 
 
 @product_bp.route('/<int:product_id>', methods=['DELETE'])
 def delete_product(product_id: int) -> Response:
-    product_controller.delete(product_id)
-    return make_response("Product deleted", HTTPStatus.OK)
+    try:
+        product_controller.delete(product_id)
+        return make_response("Product deleted", HTTPStatus.OK)
+    except Exception as e:
+        return make_response(jsonify({"error": f"An error occurred: {str(e)}"}), HTTPStatus.INTERNAL_SERVER_ERROR)
 
 @product_bp.route('/parametrized', methods=['POST'])
 def insert_product_record() -> Response:

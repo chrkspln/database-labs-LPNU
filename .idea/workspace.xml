@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05bcaa0c-6c78-43bc-ba4c-9887188c3652" name="Changes" comment="added lab5">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="05bcaa0c-6c78-43bc-ba4c-9887188c3652" name="Changes" comment="gitignore upd">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8b94b619-6998-490b-b0b8-56c698bab136.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8b94b619-6998-490b-b0b8-56c698bab136.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/route/delivery_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/delivery_route.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/route/error_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/error_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/route/product_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/product_route.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/route/supplier_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/supplier_route.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/route/urgency_type_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/urgency_type_route.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/triggers.sql" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/triggers.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +170,7 @@
       <workItem from="1730217892366" duration="798000" />
       <workItem from="1730279634601" duration="10765000" />
       <workItem from="1730455041606" duration="1151000" />
-      <workItem from="1733162936081" duration="15705000" />
+      <workItem from="1733162936081" duration="25699000" />
     </task>
     <task id="LOCAL-00001" summary="added lab4 (flask backend)">
       <option name="closed" value="true" />
@@ -205,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733184347824</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="gitignore upd">
+      <option name="closed" value="true" />
+      <created>1733184512541</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733184512541</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,7 +243,8 @@
     <MESSAGE value="added repeatable data in tables" />
     <MESSAGE value="added lab4 (fixed)" />
     <MESSAGE value="added lab5" />
-    <option name="LAST_COMMIT_MESSAGE" value="added lab5" />
+    <MESSAGE value="gitignore upd" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore upd" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -246,6 +262,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DB_lab4_flask_backend$DB_lab4_flask_backend.coverage" NAME="DB_lab4_flask_backend Coverage Results" MODIFIED="1730280033674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DB_lab4_flask_backend$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1733183958842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DB_lab4_flask_backend$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1733224666152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
