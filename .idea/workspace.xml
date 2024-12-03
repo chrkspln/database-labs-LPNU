@@ -4,40 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05bcaa0c-6c78-43bc-ba4c-9887188c3652" name="Changes" comment="added lab4 (fixed)">
-      <change afterPath="$PROJECT_DIR$/app/auth/controller/store_feedback_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/auth/dao/store_feedback_dao.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/auth/model/insert_record.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/auth/model/store_feedback_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/auth/route/store_feedback_route.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/auth/service/store_feedback_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/cursor.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/triggers.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8b94b619-6998-490b-b0b8-56c698bab136.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8b94b619-6998-490b-b0b8-56c698bab136.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="05bcaa0c-6c78-43bc-ba4c-9887188c3652" name="Changes" comment="added lab5">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/controller/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/controller/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/dao/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/dao/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/model/delivery_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/delivery_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/model/product_category_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/product_category_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/model/product_details_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/product_details_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/model/supplier_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/supplier_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/route/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/route/delivery_cost_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/delivery_cost_route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/route/delivery_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/delivery_route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/route/price_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/price_route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/route/product_category_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/product_category_route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/route/product_details_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/product_details_route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/route/product_expiration_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/product_expiration_route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/route/product_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/product_route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/route/store_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/store_route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/route/store_supply_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/store_supply_route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/route/supplier_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/supplier_route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/route/urgency_type_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/urgency_type_route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/service/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/service/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +20,17 @@
         <option value="Python Script" />
         <option value="SQL File" />
       </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
     </option>
   </component>
   <component name="Git.Settings">
@@ -86,6 +66,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "Flask server.DB_lab4_flask_backend.executor": "Run",
     "Flask server.Flask (app.py).executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -182,7 +163,7 @@
       <workItem from="1730217892366" duration="798000" />
       <workItem from="1730279634601" duration="10765000" />
       <workItem from="1730455041606" duration="1151000" />
-      <workItem from="1733162936081" duration="15198000" />
+      <workItem from="1733162936081" duration="15705000" />
     </task>
     <task id="LOCAL-00001" summary="added lab4 (flask backend)">
       <option name="closed" value="true" />
@@ -216,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732826719671</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added lab5">
+      <option name="closed" value="true" />
+      <created>1733184347824</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733184347824</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +227,8 @@
     <MESSAGE value="setup" />
     <MESSAGE value="added repeatable data in tables" />
     <MESSAGE value="added lab4 (fixed)" />
-    <option name="LAST_COMMIT_MESSAGE" value="added lab4 (fixed)" />
+    <MESSAGE value="added lab5" />
+    <option name="LAST_COMMIT_MESSAGE" value="added lab5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
