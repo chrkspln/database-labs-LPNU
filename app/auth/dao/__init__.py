@@ -9,6 +9,7 @@ from .store_dao import StoreDAO
 from .store_supply_dao import StoreSupplyDAO
 from .supplier_dao import SupplierDAO
 from .urgency_type_dao import UrgencyTypeDAO
+from .store_feedback_dao import StoreFeedbackDAO
 
 delivery_cost_dao = DeliveryCostDAO()
 delivery_dao = DeliveryDAO()
@@ -21,3 +22,4 @@ store_dao = StoreDAO()
 store_supply_dao = StoreSupplyDAO()
 supplier_dao = SupplierDAO()
 urgency_type_dao = UrgencyTypeDAO()
+store_feedback_dao = StoreFeedbackDAO()

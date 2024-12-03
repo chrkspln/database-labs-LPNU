@@ -115,3 +115,9 @@ INSERT INTO deliveries (delivery_id, store_id, urgency_type_id, delivery_date, q
 (13, 1, 3, '2024-12-09', 50),  -- Coca-Cola, Auchan Central, Standard Delivery
 ( 14, 2, 1, '2024-12-10', 40),  -- Pepsi, Auchan North, Same Day
 ( 15, 3, 2, '2024-12-11', 30);  -- Milk, Auchan Mall, Next Day
+
+INSERT INTO store_feedbacks (store_id, rating) VALUES
+(1, 4),  -- Auchan Central
+(2, 5),  -- Auchan North
+(3, 3),  -- Auchan Mall
+(4, 4);  -- Auchan City Center

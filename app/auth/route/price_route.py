@@ -1,6 +1,7 @@
 from http import HTTPStatus
 from flask import Blueprint, jsonify, Response, request, make_response
 from ..controller import price_controller
+from ..model.insert_record import insert_record
 from ..model.price_model import Price
 
 price_bp = Blueprint('price', __name__, url_prefix='/price')
@@ -43,3 +44,7 @@ def patch_price(price_id: int) -> Response:
 def delete_price(price_id: int) -> Response:
     price_controller.delete(price_id)
     return make_response("Price deleted", HTTPStatus.OK)
+
+@price_bp.route('/parametrized', methods=['POST'])
+def insert_price_record() -> Response:
+    return insert_record(Price, request.get_json())

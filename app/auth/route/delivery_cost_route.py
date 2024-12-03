@@ -2,6 +2,7 @@ from http import HTTPStatus
 from flask import Blueprint, jsonify, Response, request, make_response
 from ..controller import delivery_cost_controller
 from ..model.delivery_cost_model import DeliveryCost
+from ..model.insert_record import insert_record
 
 delivery_cost_bp = Blueprint('delivery_cost', __name__, url_prefix='/delivery_cost')
 
@@ -43,3 +44,7 @@ def patch_delivery_cost(delivery_cost_id: int) -> Response:
 def delete_delivery_cost(delivery_cost_id: int) -> Response:
     delivery_cost_controller.delete(delivery_cost_id)
     return make_response("Delivery Cost deleted", HTTPStatus.OK)
+
+@delivery_cost_bp.route('/parametrized', methods=['POST'])
+def insert_delivery_cost_record() -> Response:
+    return insert_record(DeliveryCost, request.get_json())

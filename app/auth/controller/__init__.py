@@ -9,6 +9,7 @@ from .store_controller import StoreController
 from .store_supply_controller import StoreSupplyController
 from .supplier_controller import SupplierController
 from .urgency_type_controller import UrgencyTypeController
+from .store_feedback_controller import StoreFeedbackController
 
 delivery_controller = DeliveryController()
 delivery_cost_controller = DeliveryCostController()
@@ -21,3 +22,4 @@ store_controller = StoreController()
 store_supply_controller = StoreSupplyController()
 supplier_controller = SupplierController()
 urgency_type_controller = UrgencyTypeController()
+store_feedback_controller = StoreFeedbackController()

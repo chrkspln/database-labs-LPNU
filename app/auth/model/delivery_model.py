@@ -1,6 +1,11 @@
 from __future__ import annotations
 from typing import Dict, Any
+
+from sqlalchemy import select
+
 from app import db
+from .urgency_type_model import UrgencyType
+from .store_model import Store
 
 
 class Delivery(db.Model):
@@ -36,4 +41,18 @@ class Delivery(db.Model):
             quantity=dto_dict['quantity'],
             urgency_type_id=dto_dict['urgency_type_id']
         )
+        return delivery
+
+    @staticmethod
+    def add_link(store_name: str, urgency_type_name: str) -> Delivery:
+        store = Store.query.filter_by(store_name=store_name).first()
+        urgency_type = UrgencyType.query.filter_by(urgency_description=urgency_type_name).first()
+        if store is None:
+            raise ValueError(f"Store {store_name} not found")
+        if urgency_type is None:
+            raise ValueError(f"Urgency type {urgency_type_name} not found")
+
+        delivery = Delivery(store_id=store.store_id, urgency_type_id=urgency_type.urgency_type_id)
+        db.session.add(delivery)
+        db.session.commit()
         return delivery

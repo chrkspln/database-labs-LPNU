@@ -14,6 +14,7 @@ def register_routes(app: Flask) -> None:
     from .store_supply_route import store_supply_bp
     from .supplier_route import supplier_bp
     from .urgency_type_route import urgency_type_bp
+    from .store_feedback_route import store_feedback_bp
 
 
     app.register_blueprint(delivery_cost_bp)
@@ -27,3 +28,4 @@ def register_routes(app: Flask) -> None:
     app.register_blueprint(store_supply_bp)
     app.register_blueprint(supplier_bp)
     app.register_blueprint(urgency_type_bp)
+    app.register_blueprint(store_feedback_bp)

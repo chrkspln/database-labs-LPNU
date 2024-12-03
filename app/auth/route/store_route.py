@@ -1,6 +1,7 @@
 from http import HTTPStatus
 from flask import Blueprint, jsonify, Response, request, make_response
 from ..controller import store_controller
+from ..model.insert_record import insert_record
 from ..model.store_model import Store
 
 store_bp = Blueprint('store', __name__, url_prefix='/store')
@@ -43,3 +44,7 @@ def patch_store(store_id: int) -> Response:
 def delete_store(store_id: int) -> Response:
     store_controller.delete(store_id)
     return make_response("Store deleted", HTTPStatus.OK)
+
+@store_bp.route('/parametrized', methods=['POST'])
+def insert_store_record() -> Response:
+    return insert_record(Store, request.get_json())

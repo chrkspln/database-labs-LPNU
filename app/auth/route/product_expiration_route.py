@@ -1,6 +1,7 @@
 from http import HTTPStatus
 from flask import Blueprint, jsonify, Response, request, make_response
 from ..controller import product_expiration_controller
+from ..model.insert_record import insert_record
 from ..model.product_expiration_model import ProductExpiration
 
 product_expiration_bp = Blueprint('product_expiration', __name__, url_prefix='/product_expiration')
@@ -43,3 +44,7 @@ def patch_product_expiration(product_expiration_id: int) -> Response:
 def delete_product_expiration(product_expiration_id: int) -> Response:
     product_expiration_controller.delete(product_expiration_id)
     return make_response("product_expiration deleted", HTTPStatus.OK)
+
+@product_expiration_bp.route('/parametrized', methods=['POST'])
+def insert_product_expiration_record() -> Response:
+    return insert_record(ProductExpiration, request.get_json())

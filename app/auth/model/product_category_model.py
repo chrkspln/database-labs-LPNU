@@ -1,5 +1,11 @@
 from __future__ import annotations
+
+from datetime import datetime
+from random import randint, choice
 from typing import Dict, Any
+
+from sqlalchemy import text
+
 from app import db
 
 
@@ -33,3 +39,26 @@ class ProductCategory(db.Model):
             category_name=dto_dict['category_name']
         )
         return product_category
+
+    @staticmethod
+    def create_dynamic_tables():
+        category_names = db.session.query(ProductCategory.category_name).all()
+        table_count = 0
+        for name_tuple in category_names:
+            if table_count >= 10:
+                break
+            category_name = name_tuple[0].replace(" ", "_")
+            timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
+            table_name = f"{category_name}_{timestamp}"
+            num_columns = randint(1, 9)
+            columns_sql = []
+            for i in range(1, num_columns + 1):
+                col_name = f"col_{i}"
+                col_type = choice(["VARCHAR(255)", "INT", "DECIMAL(10,2)", "DATE"])
+                columns_sql.append(f"{col_name} {col_type}")
+            columns_sql_str = ", ".join(columns_sql)
+            create_table_sql = f"CREATE TABLE `{table_name}` (id INT AUTO_INCREMENT PRIMARY KEY, {columns_sql_str});"
+            db.session.execute(text(create_table_sql))
+            print(f"Created table: {table_name}")
+            table_count += 1
+        db.session.commit()

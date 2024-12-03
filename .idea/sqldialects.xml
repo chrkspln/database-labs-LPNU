@@ -2,6 +2,9 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/app/__init__.py" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/app/auth/model/product_category_model.py" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/data.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/scripts/cursor.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/scripts/triggers.sql" dialect="MySQL" />
   </component>
 </project>

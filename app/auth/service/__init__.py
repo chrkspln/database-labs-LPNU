@@ -9,6 +9,7 @@ from .store_service import StoreService
 from .store_supply_service import StoreSupplyService
 from .supplier_service import SupplierService
 from .urgency_type_service import UrgencyTypeService
+from .store_feedback_service import StoreFeedbackService
 
 delivery_cost_service = DeliveryCostService()
 delivery_service = DeliveryService()
@@ -21,3 +22,4 @@ store_service = StoreService()
 store_supply_service = StoreSupplyService()
 supplier_service = SupplierService()
 urgency_type_service = UrgencyTypeService()
+store_feedback_service = StoreFeedbackService()

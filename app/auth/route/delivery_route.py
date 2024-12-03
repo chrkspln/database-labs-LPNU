@@ -2,6 +2,7 @@ from http import HTTPStatus
 from flask import Blueprint, jsonify, Response, request, make_response
 from ..controller import delivery_controller
 from ..model.delivery_model import Delivery
+from ..model.insert_record import insert_record
 
 delivery_bp = Blueprint('delivery', __name__, url_prefix='/delivery')
 
@@ -44,3 +45,18 @@ def patch_delivery(delivery_id: int) -> Response:
 def delete_delivery(delivery_id: int) -> Response:
     delivery_controller.delete(delivery_id)
     return make_response("Delivery deleted", HTTPStatus.OK)
+
+@delivery_bp.route('/parametrized', methods=['POST'])
+def insert_delivery_record() -> Response:
+    return insert_record(Delivery, request.get_json())
+
+@delivery_bp.route('/new_link', methods=['POST'])
+def add_link() -> Response:
+    content = request.get_json()
+    store_name = content['store_name']
+    urgency_type_name = content['urgency_type_name']
+    try:
+        new_link = Delivery.add_link(store_name, urgency_type_name)
+        return make_response(jsonify(new_link.put_into_dto()), HTTPStatus.CREATED)
+    except ValueError as e:
+        return make_response(str(e), HTTPStatus.BAD_REQUEST)

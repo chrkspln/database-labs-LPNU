@@ -29,3 +29,12 @@ class Supplier(db.Model):
             supplier_name=dto_dict['supplier_name']
         )
         return supplier
+
+    @staticmethod
+    def insert_dummy_data():
+        for i in range (1, 11):
+            supplier = Supplier(
+                supplier_name=f'Noname Supplier {i}'
+            )
+            db.session.add(supplier)
+        db.session.commit()
