@@ -8,49 +8,42 @@ import os
 db = SQLAlchemy()
 
 connection = mysql.connector.connect(
-    host='127.0.0.1',
-    user='root',
-    password='chrkspln'
+    host=os.environ.get('DB_HOST'),
+    user=os.environ.get('DB_USER'),
+    password=os.environ.get('DB_PASSWORD'),
+    database=os.environ.get('DB_NAME'),
 )
 
 def create_app():
-    app = Flask(__name__)
-    app.config.from_object(Config)
-    db.init_app(app)
-    register_routes(app)
+    application = Flask(__name__)
+    application.config.from_object(Config)
+    db.init_app(application)
+    register_routes(application)
 
     create_database()
-    with app.app_context():
-        create_tables(app)
+    with application.app_context():
+        create_tables(application)
         populate_data()
         execute_sql_scripts(['../scripts/cursor.sql', '../scripts/triggers.sql'])
 
-    return app
+    return application
 
 
 def create_database():
     global connection
     cursor = connection.cursor()
     cursor.execute("CREATE DATABASE IF NOT EXISTS lab4_auchan")
-
-    connection.database = 'lab4_auchan'
     cursor.close()
 
 
-def create_tables(app):
-    with app.app_context():
+def create_tables(application):
+    with application.app_context():
         db.create_all()
 
 
 def populate_data():
     sql_file_path = os.path.abspath('data.sql')
     if os.path.exists(sql_file_path):
-        connection = mysql.connector.connect(
-            host='127.0.0.1',
-            user='root',
-            password='chrkspln'
-        )
-        connection.database = 'lab4_auchan'
         cursor = connection.cursor()
         with open(sql_file_path, 'r') as sql_file:
             sql_text = sql_file.read()
@@ -71,12 +64,6 @@ def populate_data():
 
 
 def execute_sql_scripts(file_names):
-    connection = mysql.connector.connect(
-        host='127.0.0.1',
-        user='root',
-        password='chrkspln'
-    )
-    connection.database = 'lab4_auchan'
     cursor = connection.cursor()
     for file_name in file_names:
         file_path = os.path.abspath(file_name)
