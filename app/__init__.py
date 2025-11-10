@@ -2,6 +2,7 @@ import mysql.connector
 from flasgger import Swagger
 from flask import Flask, jsonify
 from flask_sqlalchemy import SQLAlchemy
+from flask_jwt_extended import JWTManager
 from app.auth.route import register_routes
 from app.setup import Config
 import os
@@ -37,6 +38,15 @@ swagger_template = {
 def check_if_token_in_blocklist(jwt_header, jwt_payload):
     return jwt_payload["jti"] in BLOCKLIST
 
+
+@jwt.revoked_token_loader
+def revoked_token_callback(jwt_header, jwt_payload):
+    return (
+        jsonify(
+            {"description": "The token has been revoked.", "error": "token_revoked"}
+        ),
+        401,
+    )
 db = SQLAlchemy()
 
 def create_app():
@@ -50,6 +60,8 @@ def create_app():
 
     application = Flask(__name__)
     application.config.from_object(Config)
+    application.config['JWT_SECRET_KEY'] = os.environ.get('JWT_SECRET_KEY')
+    swagger = Swagger(application, template=swagger_template)
     db.init_app(application)
     register_routes(application)
 
