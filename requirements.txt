@@ -1,4 +1,4 @@
 Flask~=3.0.3
-newpy~=1.1.16
+flasgger~=0.9.7.1
 SQLAlchemy~=2.0.36
-mysql~=0.0.2
+mysqlclient~=2.2.4
