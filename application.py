@@ -1,15 +1,17 @@
-from flask import jsonify
+from flask import Flask, jsonify
 from flasgger import Swagger
 from app import create_app
-import MySQLdb
 
 application = create_app()
-swagger = Swagger(application)
+Swagger(application)
 
-@application.errorhandler(MySQLdb.OperationalError)
+from mysql.connector import Error as MySQLError
+
+@application.errorhandler(MySQLError)
 def handle_mysql_error(error):
-    response = {"error": f"{str(error.orig)}"}
+    response = {"error": str(error)}
     return jsonify(response), 400
 
-if __name__ == '__main__':
-    application.run(debug=True)
+
+if __name__ == "__main__":
+    application.run(debug=True, host="0.0.0.0", port=5000)
