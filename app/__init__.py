@@ -1,36 +1,65 @@
 import mysql.connector
-from flask import Flask
+from flasgger import Swagger
+from flask import Flask, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from app.auth.route import register_routes
 from app.setup import Config
 import os
+from dotenv import load_dotenv
+from blocklist import BLOCKLIST
+
+load_dotenv()
+jwt = JWTManager()
+
+swagger_template = {
+    "swagger": "2.0",
+    "info": {
+        "title": "Auchan API",
+        "description": "API docs for auchan stores",
+        "version": "1.0.0",
+    },
+    "securityDefinitions": {
+        "Bearer": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header",
+            "description": "JWT Authorization header using the Bearer scheme. Example: 'Bearer {token}'"
+        }
+    },
+    "security": [
+        {
+            "Bearer": []
+        }
+    ]
+}
+
 
 db = SQLAlchemy()
 
-connection = mysql.connector.connect(
-    host=os.environ.get('DB_HOST'),
-    user=os.environ.get('DB_USER'),
-    password=os.environ.get('DB_PASSWORD'),
-    database=os.environ.get('DB_NAME'),
-)
-
 def create_app():
+    load_dotenv()
+    connection = mysql.connector.connect(
+        host=os.environ.get('DB_HOST'),
+        user=os.environ.get('DB_USER'),
+        password=os.environ.get('DB_PASSWORD'),
+        database=os.environ.get('DB_NAME'),
+    )
+
     application = Flask(__name__)
     application.config.from_object(Config)
     db.init_app(application)
     register_routes(application)
 
-    create_database()
+    create_database(connection)
     with application.app_context():
         create_tables(application)
-        populate_data()
-        execute_sql_scripts(['../scripts/cursor.sql', '../scripts/triggers.sql'])
+        populate_data(connection)
+        execute_sql_scripts(connection, ['../scripts/cursor.sql', '../scripts/triggers.sql'])
 
     return application
 
 
-def create_database():
-    global connection
+def create_database(connection):
     cursor = connection.cursor()
     cursor.execute("CREATE DATABASE IF NOT EXISTS lab4_auchan")
     cursor.close()
@@ -41,7 +70,7 @@ def create_tables(application):
         db.create_all()
 
 
-def populate_data():
+def populate_data(connection):
     sql_file_path = os.path.abspath('data.sql')
     if os.path.exists(sql_file_path):
         cursor = connection.cursor()
@@ -58,12 +87,10 @@ def populate_data():
                     except mysql.connector.Error as error:
                         print(f"Error executing SQL statement: {error}")
                         connection.rollback()
-
         cursor.close()
-        connection.close()
 
 
-def execute_sql_scripts(file_names):
+def execute_sql_scripts(connection, file_names):
     cursor = connection.cursor()
     for file_name in file_names:
         file_path = os.path.abspath(file_name)
@@ -82,6 +109,4 @@ def execute_sql_scripts(file_names):
                             print(f"Error executing SQL statement: {error}")
                             print(f"SQL statement: {statement}")
                             connection.rollback()
-
     cursor.close()
-    connection.close()

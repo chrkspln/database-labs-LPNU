@@ -1,18 +1,14 @@
-import MySQLdb
 from flask import jsonify
-from flask_swagger_ui import get_swaggerui_blueprint
-from app import create_app, db
 from flasgger import Swagger
+from app import create_app
+import MySQLdb
 
 application = create_app()
 swagger = Swagger(application)
 
 @application.errorhandler(MySQLdb.OperationalError)
 def handle_mysql_error(error):
-    # Extract the message from the SQLAlchemy exception
-    response = {
-        "error": f"{str(error.orig)}"  # Get the raw message
-    }
+    response = {"error": f"{str(error.orig)}"}
     return jsonify(response), 400
 
 if __name__ == '__main__':
