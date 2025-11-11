@@ -3,7 +3,7 @@ name: Deploy to EC2
 on:
   push:
     branches:
-      - clouds-lab1
+      - clouds-lab2
 
 jobs:
   deploy:
