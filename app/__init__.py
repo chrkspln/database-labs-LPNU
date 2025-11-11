@@ -2,7 +2,6 @@ import mysql.connector
 from flasgger import Swagger
 from flask import Flask, jsonify
 from flask_sqlalchemy import SQLAlchemy
-from flask_jwt_extended import JWTManager
 from app.auth.route import register_routes
 from app.setup import Config
 import os
@@ -11,7 +10,6 @@ from blocklist import BLOCKLIST
 
 load_dotenv()
 
-jwt = JWTManager()
 db = SQLAlchemy()
 
 swagger_template = {
@@ -31,20 +29,6 @@ swagger_template = {
     },
     "security": [{"Bearer": []}]
 }
-
-
-@jwt.token_in_blocklist_loader
-def check_if_token_in_blocklist(jwt_header, jwt_payload):
-    return jwt_payload["jti"] in BLOCKLIST
-
-
-@jwt.revoked_token_loader
-def revoked_token_callback(jwt_header, jwt_payload):
-    return (
-        jsonify({"description": "The token has been revoked.", "error": "token_revoked"}),
-        401,
-    )
-
 
 def get_db_connection():
     """Connect to the RDS instance using env variables."""
