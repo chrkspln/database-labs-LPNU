@@ -1,7 +1,9 @@
+from flasgger import Swagger
 from flask import jsonify
-from app import create_app
+from app import create_app, swagger_template
 
 application = create_app()
+Swagger(application, template=swagger_template)
 
 from mysql.connector import Error as MySQLError
 

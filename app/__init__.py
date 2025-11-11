@@ -61,7 +61,6 @@ def create_app():
     application = Flask(__name__)
     application.config.from_object(Config)
     application.config['JWT_SECRET_KEY'] = os.environ.get('JWT_SECRET_KEY')
-    Swagger(application, template=swagger_template)
     db.init_app(application)
     register_routes(application)
 
