@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05bcaa0c-6c78-43bc-ba4c-9887188c3652" name="Changes" comment="gitignore upd">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8b94b619-6998-490b-b0b8-56c698bab136.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8b94b619-6998-490b-b0b8-56c698bab136.xml" afterDir="false" />
+    <list default="true" id="05bcaa0c-6c78-43bc-ba4c-9887188c3652" name="Changes" comment="dummy">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/route/delivery_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/delivery_route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/route/error_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/error_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/route/product_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/product_route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/route/supplier_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/supplier_route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/route/urgency_type_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/route/urgency_type_route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/triggers.sql" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/triggers.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,36 +58,36 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2njy6A8hSo7aBUKV2sXpkpDHdlb" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;Flask server.DB_lab4_flask_backend.executor&quot;: &quot;Run&quot;,
-    &quot;Flask server.Flask (app.py).executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;lab5&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/dev/projects/DB_lab4_flask_backend/sql&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;database.query.execution&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Flask server.DB_lab4_flask_backend.executor": "Run",
+    "Flask server.Flask (app.py).executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "clouds-lab1",
+    "last_opened_file_path": "C:/dev/projects/DB_lab4_flask_backend/sql",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "database.query.execution",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\dev\projects\DB_lab4_flask_backend\sql" />
@@ -220,7 +214,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733184512541</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="dummy">
+      <option name="closed" value="true" />
+      <created>1762823497039</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1762823497039</updated>
+    </task>
+    <task id="LOCAL-00008" summary="dummy">
+      <option name="closed" value="true" />
+      <created>1762823512149</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1762823512149</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +254,8 @@
     <MESSAGE value="added lab4 (fixed)" />
     <MESSAGE value="added lab5" />
     <MESSAGE value="gitignore upd" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore upd" />
+    <MESSAGE value="dummy" />
+    <option name="LAST_COMMIT_MESSAGE" value="dummy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -261,7 +272,9 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DB_lab4_flask_backend$DB_lab4_flask_backend.coverage" NAME="DB_lab4_flask_backend Coverage Results" MODIFIED="1730280033674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DB_lab4_flask_backend$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1733224666152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/database_labs_LPNU$Flask__application_py_.coverage" NAME="Flask (application.py) Coverage Results" MODIFIED="1762787141389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DB_lab4_flask_backend$DB_lab4_flask_backend.coverage" NAME="DB_lab4_flask_backend Coverage Results" MODIFIED="1730280033674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/database_labs_LPNU$Flask__app_py_.coverage" NAME="Flask (application.py) Coverage Results" MODIFIED="1760306436605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
