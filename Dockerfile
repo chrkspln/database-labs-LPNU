@@ -1,5 +1,5 @@
 FROM python:3.9-slim
-WORKDIR /backend
+WORKDIR /home/ec2-user/backend
 COPY requirements.txt .
 RUN apt-get update && apt-get install -y pkg-config default-libmysqlclient-dev gcc \
     && pip install --no-cache-dir -r requirements.txt \
