@@ -22,7 +22,7 @@ jobs:
         run: |
           mkdir -p ~/.ssh
           ssh-keyscan -H 51.21.255.185 >> ~/.ssh/known_hosts
-          rsync -avz --exclude '.git*' ./ ec2-user@51.21.255.185:/home/ec2-user/app/
+          rsync -avz --exclude '.git*' ./ ec2-user@51.21.255.185:/home/ec2-user/backend/
 
           ssh ec2-user@51.21.255.185 << 'EOF'
             cd /home/ec2-user/app
