@@ -6,12 +6,10 @@ from dotenv import load_dotenv
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 # add proper app dir
-from app.__init__ import create_tables, populate_data, execute_sql_scripts
+from app.__init__ import db, create_tables, populate_data, execute_sql_scripts
 from app.setup import Config
 
 load_dotenv()
-
-db = SQLAlchemy()
 
 
 def get_db_connection():

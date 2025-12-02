@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05bcaa0c-6c78-43bc-ba4c-9887188c3652" name="Changes" comment="upd secrets for deploy">
+    <list default="true" id="05bcaa0c-6c78-43bc-ba4c-9887188c3652" name="Changes" comment="add comment for app path">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db_init.py" beforeDir="false" afterPath="$PROJECT_DIR$/db_init.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +170,7 @@
       <workItem from="1733162936081" duration="25699000" />
       <workItem from="1762873171105" duration="2175000" />
       <workItem from="1763046043258" duration="1110000" />
-      <workItem from="1763047903878" duration="5262000" />
+      <workItem from="1763047903878" duration="6374000" />
     </task>
     <task id="LOCAL-00001" summary="added lab4 (flask backend)">
       <option name="closed" value="true" />
@@ -331,7 +332,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764698907865</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add comment for app path">
+      <option name="closed" value="true" />
+      <created>1764699010633</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1764699010633</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,7 +375,8 @@
     <MESSAGE value="upd /app dir" />
     <MESSAGE value="fix app/backend path problem" />
     <MESSAGE value="upd secrets for deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="upd secrets for deploy" />
+    <MESSAGE value="add comment for app path" />
+    <option name="LAST_COMMIT_MESSAGE" value="add comment for app path" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
