@@ -6,7 +6,6 @@ from app.auth.route import register_routes
 from app.setup import Config
 import os
 from dotenv import load_dotenv
-from blocklist import BLOCKLIST
 
 load_dotenv()
 
@@ -44,17 +43,8 @@ def create_app():
     # Flask app setup
     application = Flask(__name__)
     application.config.from_object(Config)
-    application.config['JWT_SECRET_KEY'] = os.environ.get('JWT_SECRET_KEY')
     db.init_app(application)
     register_routes(application)
-
-    # Database setup
-    connection = get_db_connection()
-    with application.app_context():
-        create_tables(application)
-        populate_data(connection)
-        execute_sql_scripts(connection, ['../scripts/cursor.sql', '../scripts/triggers.sql'])
-    connection.close()
 
     return application
 
