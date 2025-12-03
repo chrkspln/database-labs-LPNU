@@ -1,6 +1,6 @@
 from app import create_app
 from app.db_import import db
-from app.model import *
+from app.auth.model import *
 
 from app.__init__ import create_tables, populate_data, execute_sql_scripts
 from app.setup import Config
