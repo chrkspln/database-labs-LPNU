@@ -4,9 +4,8 @@ import os
 import mysql.connector
 from dotenv import load_dotenv
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
-# add proper app dir
 from app.__init__ import db, create_tables, populate_data, execute_sql_scripts
+from app.auth import model
 from app.setup import Config
 
 load_dotenv()

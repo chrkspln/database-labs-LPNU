@@ -4,7 +4,6 @@ from flask import Flask, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from app.auth.route import register_routes
 from app.setup import Config
-from app.auth import model
 import os
 from dotenv import load_dotenv
 
