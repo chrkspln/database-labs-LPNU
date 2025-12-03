@@ -1,6 +1,6 @@
 from flask import jsonify, make_response
 from http import HTTPStatus
-from app import db
+from app.db_import import db
 
 def insert_record(model, data):
     try:

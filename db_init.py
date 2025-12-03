@@ -1,48 +1,37 @@
-# init_db.py
+from app import create_app
+from app.db_import import db
+from app.model import *
 
-import os
-import mysql.connector
-from dotenv import load_dotenv
-from flask import Flask
-from app.__init__ import db, create_tables, populate_data, execute_sql_scripts
-from app.auth import model
+from app.__init__ import create_tables, populate_data, execute_sql_scripts
 from app.setup import Config
+import mysql.connector
+import os
+from dotenv import load_dotenv
 
 load_dotenv()
 
-
-def get_db_connection():
-    return mysql.connector.connect(
-        host=os.environ.get('DB_HOST'),
-        user=os.environ.get('DB_USER'),
-        password=os.environ.get('DB_PASSWORD'),
-        database=os.environ.get('DB_NAME')
-    )
-
-
 def init_database():
-    """Run full DB initialization: tables, data, scripts."""
     print("[init_db] Connecting to DB...")
 
-    connection = get_db_connection()
+    # Create proper Flask app
+    app = create_app()
 
-    # Temporary Flask app for SQLAlchemy
-    app = Flask(__name__)
-    app.config.from_object(Config)
-    db.init_app(app)
+    connection = mysql.connector.connect(
+        host=os.environ["DB_HOST"],
+        user=os.environ["DB_USER"],
+        password=os.environ["DB_PASSWORD"],
+        database=os.environ["DB_NAME"]
+    )
 
     print("[init_db] Creating tables...")
     with app.app_context():
         create_tables(app)
 
-    print("[init_db] Populating data from data.sql...")
+    print("[init_db] Populating data...")
     populate_data(connection)
 
-    print("[init_db] Executing SQL scripts...")
-    execute_sql_scripts(connection, [
-        'scripts/cursor.sql',
-        'scripts/triggers.sql'
-    ])
+    print("[init_db] Executing scripts...")
+    execute_sql_scripts(connection, ['scripts/cursor.sql', 'scripts/triggers.sql'])
 
     connection.close()
     print("[init_db] Done.")

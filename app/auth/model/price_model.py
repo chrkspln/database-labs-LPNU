@@ -1,6 +1,6 @@
 from __future__ import annotations
 from typing import Dict, Any
-from app import db
+from app.db_import import db
 
 
 class Price(db.Model):

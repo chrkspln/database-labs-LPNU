@@ -1,15 +1,13 @@
 import mysql.connector
 from flasgger import Swagger
 from flask import Flask, jsonify
-from flask_sqlalchemy import SQLAlchemy
+from app.db_import import db
 from app.auth.route import register_routes
 from app.setup import Config
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
-
-db = SQLAlchemy()
 
 swagger_template = {
     "swagger": "2.0",
@@ -44,6 +42,8 @@ def create_app():
     application = Flask(__name__)
     application.config.from_object(Config)
     db.init_app(application)
+
+    import app.model
     register_routes(application)
 
     return application

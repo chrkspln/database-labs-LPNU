@@ -6,7 +6,7 @@ from typing import Dict, Any
 
 from sqlalchemy import text
 
-from app import db
+from app.db_import import db
 
 
 class ProductCategory(db.Model):

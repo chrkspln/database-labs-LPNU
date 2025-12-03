@@ -3,7 +3,7 @@ from typing import Dict, Any
 
 from sqlalchemy import select
 
-from app import db
+from app.db_import import db
 from .urgency_type_model import UrgencyType
 from .store_model import Store
 

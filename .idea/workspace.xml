@@ -4,8 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05bcaa0c-6c78-43bc-ba4c-9887188c3652" name="Changes" comment="resolve tables init on ec2">
+    <list default="true" id="05bcaa0c-6c78-43bc-ba4c-9887188c3652" name="Changes" comment="change includes">
+      <change afterPath="$PROJECT_DIR$/app/db_import.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/model/delivery_cost_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/delivery_cost_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/model/delivery_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/delivery_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/model/insert_record.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/insert_record.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/model/price_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/price_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/model/product_category_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/product_category_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/model/product_details_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/product_details_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/model/product_expiration_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/product_expiration_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/model/product_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/product_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/model/store_feedback_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/store_feedback_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/model/store_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/store_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/model/store_supply_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/store_supply_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/model/supplier_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/supplier_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/model/urgency_type_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/model/urgency_type_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db_init.py" beforeDir="false" afterPath="$PROJECT_DIR$/db_init.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -166,7 +181,7 @@
       <workItem from="1762873171105" duration="2175000" />
       <workItem from="1763046043258" duration="1110000" />
       <workItem from="1763047903878" duration="6374000" />
-      <workItem from="1764758340512" duration="1144000" />
+      <workItem from="1764758340512" duration="2740000" />
     </task>
     <task id="LOCAL-00001" summary="added lab4 (flask backend)">
       <option name="closed" value="true" />
@@ -344,7 +359,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764759489444</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="change includes">
+      <option name="closed" value="true" />
+      <created>1764759617073</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1764759617073</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,15 +404,12 @@
     <MESSAGE value="upd secrets for deploy" />
     <MESSAGE value="add comment for app path" />
     <MESSAGE value="resolve tables init on ec2" />
-    <option name="LAST_COMMIT_MESSAGE" value="resolve tables init on ec2" />
+    <MESSAGE value="change includes" />
+    <option name="LAST_COMMIT_MESSAGE" value="change includes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/app/auth/model/urgency_type_model.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/app/auth/controller/store_controller.py</url>
           <option name="timeStamp" value="2" />

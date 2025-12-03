@@ -1,9 +1,7 @@
 from __future__ import annotations
 from typing import Dict, Any
 
-from unicodedata import category
-
-from app import db
+from app.db_import import db
 
 
 class Product(db.Model):
