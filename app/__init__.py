@@ -43,7 +43,7 @@ def create_app():
     application.config.from_object(Config)
     db.init_app(application)
 
-    import app.model
+    import app.auth.model
     register_routes(application)
 
     return application
