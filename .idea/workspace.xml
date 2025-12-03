@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="05bcaa0c-6c78-43bc-ba4c-9887188c3652" name="Changes" comment="add comment for app path">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_init.py" beforeDir="false" afterPath="$PROJECT_DIR$/db_init.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +103,7 @@
       <recent name="C:\dev\projects\DB_lab4_flask_backend\lab4\auth" />
     </key>
   </component>
-  <component name="RunManager" selected="Flask server.Flask (app.py)">
+  <component name="RunManager" selected="Flask server.DB_lab4_flask_backend">
     <configuration name="DB_lab4_flask_backend" type="Python.FlaskServer">
       <module name="DB_lab4_flask_backend" />
       <option name="target" value="$PROJECT_DIR$/app.py" />
@@ -136,11 +136,6 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Flask server.Flask (app.py)" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -171,6 +166,7 @@
       <workItem from="1762873171105" duration="2175000" />
       <workItem from="1763046043258" duration="1110000" />
       <workItem from="1763047903878" duration="6374000" />
+      <workItem from="1764758340512" duration="992000" />
     </task>
     <task id="LOCAL-00001" summary="added lab4 (flask backend)">
       <option name="closed" value="true" />

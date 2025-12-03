@@ -4,6 +4,7 @@ from flask import Flask, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from app.auth.route import register_routes
 from app.setup import Config
+from app.auth import model
 import os
 from dotenv import load_dotenv
 
@@ -57,7 +58,8 @@ def create_tables(application):
 
 def populate_data(connection):
     """Populate DB with initial data from data.sql if it exists."""
-    sql_file_path = os.path.abspath('data.sql')
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    sql_file_path = os.path.join(base_dir, '..', 'data.sql')
     if not os.path.exists(sql_file_path):
         return
 
