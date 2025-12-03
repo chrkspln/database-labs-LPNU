@@ -1,9 +1,14 @@
 FROM python:3.9-slim
-WORKDIR /home/ec2-user/backend
+
+WORKDIR /app
 COPY requirements.txt .
 RUN apt-get update && apt-get install -y pkg-config default-libmysqlclient-dev gcc \
     && pip install --no-cache-dir -r requirements.txt \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
+
 COPY . .
+
+ENV PORT=5000
 EXPOSE 5000
-CMD ["flask","run", "--host", "0.0.0.0"]
+
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "application:app"]
