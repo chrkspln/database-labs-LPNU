@@ -40,5 +40,5 @@ jobs:
         run: |
           aws ecs update-service \
             --cluster lpnu-clouds-cluster \
-            --service lpnu-clouds-cluster \
+            --service lpnu-clouds-tasks-service-3q20mvus \
             --force-new-deployment
