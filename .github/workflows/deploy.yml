@@ -41,4 +41,5 @@ jobs:
           aws ecs update-service \
             --cluster lpnu-clouds-cluster \
             --service lpnu-clouds-tasks-service-3q20mvus \
+            --desired-count 1 \
             --force-new-deployment
