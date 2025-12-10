@@ -39,6 +39,6 @@ jobs:
       - name: Deploy to ECS
         run: |
           aws ecs update-service \
-            --cluster backend-cluster \
-            --service backend-service \
+            --cluster lpnu-clouds-cluster \
+            --service lpnu-clouds-cluster \
             --force-new-deployment
