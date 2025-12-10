@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05bcaa0c-6c78-43bc-ba4c-9887188c3652" name="Changes" comment="fix model import">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
+    <list default="true" id="05bcaa0c-6c78-43bc-ba4c-9887188c3652" name="Changes" comment="fix deploy pipeline">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocklist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build_and_push.ps1" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +168,7 @@
       <workItem from="1762873171105" duration="2175000" />
       <workItem from="1763046043258" duration="1110000" />
       <workItem from="1763047903878" duration="6374000" />
-      <workItem from="1764758340512" duration="4633000" />
+      <workItem from="1764758340512" duration="6982000" />
     </task>
     <task id="LOCAL-00001" summary="added lab4 (flask backend)">
       <option name="closed" value="true" />
@@ -377,7 +378,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764770721873</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="fix deploy pipeline">
+      <option name="closed" value="true" />
+      <created>1764779514953</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1764779514953</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,7 +426,8 @@
     <MESSAGE value="change includes" />
     <MESSAGE value="resolve double init of db, fix dependencies" />
     <MESSAGE value="fix model import" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix model import" />
+    <MESSAGE value="fix deploy pipeline" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix deploy pipeline" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
