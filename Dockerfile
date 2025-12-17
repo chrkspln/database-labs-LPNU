@@ -12,4 +12,4 @@ COPY . .
 ENV PORT=5000
 EXPOSE 5000
 
-CMD ["gunicorn", "--workers", "2", "--threads", "4", "--bind", "0.0.0.0:5000", "application:application"]
+CMD ["gunicorn","--workers","2","--threads","4","--bind","0.0.0.0:5000","--forwarded-allow-ips","*","application:application"]

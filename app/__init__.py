@@ -15,17 +15,24 @@ swagger_template = {
         "title": "Auchan API",
         "description": "API docs for auchan stores",
         "version": "1.0.0",
-    },
-    "securityDefinitions": {
-        "Bearer": {
-            "type": "apiKey",
-            "name": "Authorization",
-            "in": "header",
-            "description": "JWT Authorization header using the Bearer scheme. Example: 'Bearer {token}'"
-        }
-    },
-    "security": [{"Bearer": []}]
+    }
 }
+
+swagger_config = {
+    "headers": [],
+    "specs": [
+        {
+            "endpoint": "apispec",
+            "route": "/apispec.json",
+            "rule_filter": lambda rule: True,
+            "model_filter": lambda tag: True,
+        }
+    ],
+    "static_url_path": "/flasgger_static",
+    "swagger_ui": True,
+    "specs_route": "/apidocs/"
+}
+
 
 def get_db_connection():
     """Connect to the RDS instance using env variables."""
@@ -38,9 +45,12 @@ def get_db_connection():
 
 
 def create_app():
-    # Flask app setup
     application = Flask(__name__)
     application.config.from_object(Config)
+
+    application.config["SERVER_NAME"] = None
+    application.config["APPLICATION_ROOT"] = "/"
+
     db.init_app(application)
 
     @application.route("/")
@@ -51,7 +61,6 @@ def create_app():
     register_routes(application)
 
     return application
-
 
 
 def create_tables(application):
