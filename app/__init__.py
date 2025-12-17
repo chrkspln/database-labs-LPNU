@@ -43,10 +43,15 @@ def create_app():
     application.config.from_object(Config)
     db.init_app(application)
 
+    @application.route("/")
+    def health_check():
+        return "OK", 200
+
     import app.auth.model
     register_routes(application)
 
     return application
+
 
 
 def create_tables(application):
